@@ -5,6 +5,7 @@ import 'package:login_app/firebase_services.dart';
 import 'package:login_app/home_chat_bot.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:login_app/reset_password.dart';
+import 'package:linkwell/linkwell.dart';
 
 class SigninPage extends StatefulWidget {
   const SigninPage({super.key});
@@ -74,7 +75,7 @@ class _SigninPageState extends State<SigninPage> {
               ),
 
               SizedBox(height: 16.0),
-            
+
               TextFormField(
                 obscureText:
                     _obscureText, // Xác định liệu mật khẩu có bị ẩn hay không
@@ -107,7 +108,7 @@ class _SigninPageState extends State<SigninPage> {
               ),
 
               SizedBox(height: 5.0),
-              //sigin button
+              //sigin buttonUp
               Row(mainAxisAlignment: MainAxisAlignment.end, children: [
                 TextButton(
                   onPressed: () {
@@ -173,7 +174,7 @@ class _SigninPageState extends State<SigninPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 10.0),
+              SizedBox(height: 40.0),
 
               Row(
                 children: [
@@ -190,14 +191,32 @@ class _SigninPageState extends State<SigninPage> {
                   )),
                 ],
               ),
-              const SizedBox(height: 10.0),
+              const SizedBox(height: 40.0),
               IconButton(
                   onPressed: () async {
                     await FirebaseServices().signInWithGoogle();
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => Home()));
                   },
-                  icon: Image.asset("assets/icon/google.png"))
+                  icon: Image.asset("assets/icon/google.png")),
+              const SizedBox(height: 40.0),
+
+              LinkWell(
+                "Tìm hiểu thêm trên https://comforting-jelly-0b2f8a.netlify.app/",
+                listOfNames: {
+                  'https://comforting-jelly-0b2f8a.netlify.app/': 'website',
+                },
+                style: TextStyle(
+                  fontSize: 16.0,
+                  color: Colors.grey[400],
+                ),
+                linkStyle: TextStyle(
+                  color: Colors.blue[900], // Màu sắc của liên kết
+                  decoration: TextDecoration.underline, // Gạch chân liên kết
+                  fontSize: 16.0, // Kích thước chữ của liên kết
+                  fontWeight: FontWeight.bold, // Độ đậm của liên kết
+                ),
+              )
             ]),
           ),
         ),

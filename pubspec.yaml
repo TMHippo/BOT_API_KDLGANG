@@ -41,10 +41,10 @@ dependencies:
   cloud_firestore: ^4.9.1
   firebase_storage: ^11.2.6
   velocity_x: ^4.1.1
-  dialog_flowtter: ^0.3.3
   fluttertoast: ^8.2.2
   flutter_launcher_icons: ^0.13.1
   http: ^0.13.6
+  linkwell: ^2.0.6
 
   
 
@@ -88,7 +88,6 @@ flutter:
     - assets/icon/google.png
     - assets/icon/clear.png
     - assets/icon/complaint.png
-    - assets/dialog_flow_auth.json
     - assets/icon/chat_bot.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
