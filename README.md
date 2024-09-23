@@ -28,4 +28,4 @@ Try our chatbot for a seamless experience, and let us handle your complaints pro
  
 Web : https://comforting-jelly-0b2f8a.netlify.app/?fbclid=IwY2xjawFeHi5leHRuA2FlbQIxMAABHajJaSp1wMtth3GUqp3Ui34v2J9TvZVD1awDRSzAC7tyv_MTgGD-qrkGgw_aem_IadUi_meTiDtte3nQYSNzA
 
-APK : https://qr.me-qr.com/vi/utr3EsO8
+APK : https://qr.me-qr.com/vi/utr3EsO8#google_vignette
